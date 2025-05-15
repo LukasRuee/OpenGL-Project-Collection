@@ -1,0 +1,17 @@
+C:\OpenGL\GL_4\OpenGL_Game\bin\Debug\net6.0\OpenGL.dll.config
+C:\OpenGL\GL_4\OpenGL_Game\bin\Debug\net6.0\OpenGL_Game.deps.json
+C:\OpenGL\GL_4\OpenGL_Game\bin\Debug\net6.0\OpenGL_Game.dll
+C:\OpenGL\GL_4\OpenGL_Game\bin\Debug\net6.0\OpenGL_Game.pdb
+C:\OpenGL\GL_4\OpenGL_Game\bin\Debug\net6.0\OpenGL.dll
+C:\OpenGL\GL_4\OpenGL_Game\bin\Debug\net6.0\OpenGL.pdb
+C:\OpenGL\GL_4\OpenGL_Game\obj\Debug\net6.0\OpenGL_Game.csproj.AssemblyReference.cache
+C:\OpenGL\GL_4\OpenGL_Game\obj\Debug\net6.0\OpenGL_Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\OpenGL\GL_4\OpenGL_Game\obj\Debug\net6.0\OpenGL_Game.AssemblyInfoInputs.cache
+C:\OpenGL\GL_4\OpenGL_Game\obj\Debug\net6.0\OpenGL_Game.AssemblyInfo.cs
+C:\OpenGL\GL_4\OpenGL_Game\obj\Debug\net6.0\OpenGL_Game.csproj.CoreCompileInputs.cache
+C:\OpenGL\GL_4\OpenGL_Game\obj\Debug\net6.0\OpenGL_Game.sourcelink.json
+C:\OpenGL\GL_4\OpenGL_Game\obj\Debug\net6.0\OpenGL_G.93987443.Up2Date
+C:\OpenGL\GL_4\OpenGL_Game\obj\Debug\net6.0\OpenGL_Game.dll
+C:\OpenGL\GL_4\OpenGL_Game\obj\Debug\net6.0\refint\OpenGL_Game.dll
+C:\OpenGL\GL_4\OpenGL_Game\obj\Debug\net6.0\OpenGL_Game.pdb
+C:\OpenGL\GL_4\OpenGL_Game\obj\Debug\net6.0\ref\OpenGL_Game.dll

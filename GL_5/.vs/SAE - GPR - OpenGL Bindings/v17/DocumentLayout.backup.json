@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\OpenGL\\GL_4\\",
+  "WorkspaceRootPath": "C:\\OpenGL\\GL_5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1ECBC932-6128-4DE0-98B4-0DD8D9C8BE9F}|Game\\OpenGL.Game.csproj|c:\\opengl\\gl_4\\game\\coreclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ECBC932-6128-4DE0-98B4-0DD8D9C8BE9F}|Game\\OpenGL.Game.csproj|solutionrelative:game\\coreclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E959E87-FEAC-4796-BFE2-8034082DC109}|SAE.OpenGL.P5\\SAE.OpenGL.P5.csproj|c:\\opengl\\gl_5\\sae.opengl.p5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E959E87-FEAC-4796-BFE2-8034082DC109}|SAE.OpenGL.P5\\SAE.OpenGL.P5.csproj|solutionrelative:sae.opengl.p5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A3D3106-AFEC-4E04-9630-7A1A2D0C16DB}|OpenGL\\OpenGL.csproj|C:\\OpenGL\\GL_4\\opengl\\mathematics\\transform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A3D3106-AFEC-4E04-9630-7A1A2D0C16DB}|OpenGL\\OpenGL.csproj|solutionrelative:opengl\\mathematics\\transform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA1A6C88-B8CC-45F9-9B75-80F76E91E80A}|SAE.OpenGL.P4\\SAE.OpenGL.P4.csproj|c:\\opengl\\gl_4\\sae.opengl.p4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA1A6C88-B8CC-45F9-9B75-80F76E91E80A}|SAE.OpenGL.P4\\SAE.OpenGL.P4.csproj|solutionrelative:sae.opengl.p4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A3D3106-AFEC-4E04-9630-7A1A2D0C16DB}|OpenGL\\OpenGL.csproj|C:\\OpenGL\\GL_5\\opengl\\constructs\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A3D3106-AFEC-4E04-9630-7A1A2D0C16DB}|OpenGL\\OpenGL.csproj|solutionrelative:opengl\\constructs\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CoreClasses.cs",
-              "DocumentMoniker": "C:\\OpenGL\\GL_4\\Game\\CoreClasses.cs",
-              "RelativeDocumentMoniker": "Game\\CoreClasses.cs",
-              "ToolTip": "C:\\OpenGL\\GL_4\\Game\\CoreClasses.cs",
-              "RelativeToolTip": "Game\\CoreClasses.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCkAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T17:43:07.153Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\OpenGL\\GL_4\\SAE.OpenGL.P4\\Program.cs",
-              "RelativeDocumentMoniker": "SAE.OpenGL.P4\\Program.cs",
-              "ToolTip": "C:\\OpenGL\\GL_4\\SAE.OpenGL.P4\\Program.cs",
-              "RelativeToolTip": "SAE.OpenGL.P4\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T06:21:29.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Transform.cs",
-              "DocumentMoniker": "C:\\OpenGL\\GL_4\\OpenGL\\Mathematics\\Transform.cs",
-              "RelativeDocumentMoniker": "OpenGL\\Mathematics\\Transform.cs",
-              "ToolTip": "C:\\OpenGL\\GL_4\\OpenGL\\Mathematics\\Transform.cs",
-              "RelativeToolTip": "OpenGL\\Mathematics\\Transform.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Title": "Shader.cs",
+              "DocumentMoniker": "C:\\OpenGL\\GL_5\\OpenGL\\Constructs\\Shader.cs",
+              "RelativeDocumentMoniker": "OpenGL\\Constructs\\Shader.cs",
+              "ToolTip": "C:\\OpenGL\\GL_5\\OpenGL\\Constructs\\Shader.cs",
+              "RelativeToolTip": "OpenGL\\Constructs\\Shader.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAwwOMAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T08:06:33.731Z",
+              "WhenOpened": "2025-04-28T09:27:33.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\OpenGL\\GL_5\\SAE.OpenGL.P5\\Program.cs",
+              "RelativeDocumentMoniker": "SAE.OpenGL.P5\\Program.cs",
+              "ToolTip": "C:\\OpenGL\\GL_5\\SAE.OpenGL.P5\\Program.cs",
+              "RelativeToolTip": "SAE.OpenGL.P5\\Program.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAgwFcAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:24:45.399Z",
               "EditorCaption": ""
             }
           ]

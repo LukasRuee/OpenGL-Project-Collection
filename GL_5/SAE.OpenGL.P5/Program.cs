@@ -6,22 +6,14 @@ using OpenGL.Platform;
 using OpenGL.Game;
 using OpenGL;
 using System.IO;
+using static OpenGL.GenericVAO;
 
-namespace SAE.GPR.P4
+namespace SAE.GPR.P5
 {
     static class Program
     {
-        private static int width = 800;
-        private static int height = 600;
-
-        static void Main()
+        private static Vector3[] vertices = new Vector3[]
         {
-
-            Game game = new Game();
-
-            #region shape
-        Vector3[] vertices = new Vector3[]
-            {
                 // Bottom face (near)
                 new Vector3(-0.5f, -0.5f,  0.5f),
                 new Vector3( 0.5f, -0.5f,  0.5f),
@@ -33,9 +25,9 @@ namespace SAE.GPR.P4
                 new Vector3( 0.5f, -0.5f, -0.5f),
                 new Vector3( 0.5f,  0.5f, -0.5f),
                 new Vector3(-0.5f,  0.5f, -0.5f)
-            };
-            uint[] indices = new uint[]
-            {
+        };
+        private static uint[] indices = new uint[]
+        {
                 // Near face
                 0, 1, 2, 2, 3, 0,
 
@@ -53,32 +45,52 @@ namespace SAE.GPR.P4
 
                 // Top face
                 4, 0, 3, 3, 7, 4
-            };
-            #endregion
+        };
+        private static Vector3[] colors = new Vector3[]
+        {
+            new Vector3(1, 0, 0), // Red
+            new Vector3(0, 1, 0), // Green
+            new Vector3(0, 0, 1), // Blue
+            new Vector3(1, 1, 0), // Yellow
+
+            new Vector3(1, 0, 1), // Magenta
+            new Vector3(0, 1, 1), // Cyan
+            new Vector3(1, 1, 1), // White
+            new Vector3(0, 0, 0)  // Black
+        };
+
+        private static int width = 800;
+        private static int height = 600;
+
+        static void Main()
+        {
+            Game game = new Game();
 
             Time.Initialize();
-            Window.CreateWindow("OpenGL P4", 800, 600);
+            Window.CreateWindow("OpenGL P5", 800, 600);
 
-            // add a reshape callback to update the UI
             Window.OnReshapeCallbacks.Add(OnResize);
-
-            // add a close callback to make sure we dispose of everythng properly
             Window.OnCloseCallbacks.Add(OnClose);
-            // Enable depth testing to ensure correct z-ordering of our fragments
+
             Gl.Enable(EnableCap.DepthTest);
             Gl.BlendFunc(BlendingFactorSrc.SrcAlpha, BlendingFactorDest.OneMinusSrcAlpha);
 
-            // Load shader files
             Material material = Material.Create("shaders\\vert.vs", "shaders\\frag.fs");
-            material["color"].SetValue(new Vector3(1, 0, 1));
+            material["color"].SetValue(new Vector3(1, 1, 1));
 
-            Gl.PolygonMode(MaterialFace.FrontAndBack, PolygonMode.Line);
+            Gl.PolygonMode(MaterialFace.FrontAndBack, PolygonMode.Fill);
 
-            //TODO: Create VAO Data
-            var cube = new VAO(material, new VBO<Vector3>(vertices), new VBO<uint>(indices, BufferTarget.ElementArrayBuffer, BufferUsageHint.StaticRead));
+            //Fill shader
+            List<IGenericVBO> vbos = new List<IGenericVBO>();
+            vbos.Add(new GenericVBO<Vector3>(new VBO<Vector3>(vertices), "in_position"));
+            vbos.Add(new GenericVBO<Vector3>(new VBO<Vector3>(colors), "in_color"));
+            vbos.Add(new GenericVBO<uint>(new VBO<uint>(indices, BufferTarget.ElementArrayBuffer, BufferUsageHint.StaticRead)));
+
+            var vbo = vbos.ToArray();
+            var vao = new VAO(material, vbo);
 
             //TODO: Create game object
-            GameObject obj = new GameObject("Object", new MeshRenderer(material, cube));
+            GameObject obj = new GameObject("Object", new MeshRenderer(material, vao));
 
             //TODO: Add to scene
             obj.Transform.Position = new Vector3(0, 0, -10);
@@ -118,9 +130,11 @@ namespace SAE.GPR.P4
         // TODO: Add GameObject obj parameter
         private static void SetTransform(GameObject obj)
         {
-            // TODO: Uncomment code below
+            // Rotate over time
+            float rotationSpeed = 50f; // degrees per second
 
-            float r = Mathf.Sin(Time.TimeSinceStart*10);
+            float deltaTime = Time.DeltaTime; // Time passed since last frame
+            obj.Transform.Rotation += new Vector3(rotationSpeed * deltaTime, rotationSpeed * deltaTime, rotationSpeed * deltaTime);
 
             Matrix4 view = GetViewMatrix();
             Matrix4 projection = GetProjectionMatrix();
