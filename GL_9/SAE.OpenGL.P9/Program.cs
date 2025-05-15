@@ -189,7 +189,6 @@ namespace SAE.GPR.P10
             }
         }
 
-
         #region Transformation
 
         private static void SetTransform(GameObject obj)
